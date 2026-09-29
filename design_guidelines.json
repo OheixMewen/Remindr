@@ -1,0 +1,238 @@
+{
+  "app_name": "Task & Reminder App",
+  "personality": "1 iOS-Native Clean structure with 7 Dark-First Utility palette logic",
+  "personality_one_liner": "A highly refined, minimalist task manager focusing on speed, legibility, and premium dark-mode aesthetics without visual clutter.",
+  "color": {
+    "light": {
+      "surface": "#F2F2F7",
+      "onSurface": "#000000",
+      "surfaceSecondary": "#FFFFFF",
+      "onSurfaceSecondary": "#1C1C1E",
+      "surfaceTertiary": "#E5E5EA",
+      "onSurfaceTertiary": "#1C1C1E",
+      "surfaceInverse": "#1C1C1E",
+      "onSurfaceInverse": "#FFFFFF",
+      "brand": "#FF3B30",
+      "brandPrimary": "#FF3B30",
+      "onBrandPrimary": "#FFFFFF",
+      "brandSecondary": "#8E8E93",
+      "onBrandSecondary": "#FFFFFF",
+      "brandTertiary": "#FF3B3015",
+      "onBrandTertiary": "#FF3B30",
+      "success": "#34C759",
+      "onSuccess": "#FFFFFF",
+      "warning": "#FF9F0A",
+      "onWarning": "#FFFFFF",
+      "error": "#FF3B30",
+      "onError": "#FFFFFF",
+      "info": "#8E8E93",
+      "onInfo": "#FFFFFF",
+      "border": "#C6C6C8",
+      "borderStrong": "#AEAEB2",
+      "divider": "#C6C6C880",
+      "muted": "#8E8E93",
+      "onBrand": "#FFFFFF",
+      "priorityLow": "#34C759",
+      "priorityNormal": "#8E8E93",
+      "priorityHigh": "#FF9F0A",
+      "priorityUrgent": "#FF3B30"
+    },
+    "dark": {
+      "surface": "#000000",
+      "onSurface": "#FFFFFF",
+      "surfaceSecondary": "#1C1C1E",
+      "onSurfaceSecondary": "#F2F2F7",
+      "surfaceTertiary": "#2C2C2E",
+      "onSurfaceTertiary": "#E5E5EA",
+      "surfaceInverse": "#F2F2F7",
+      "onSurfaceInverse": "#000000",
+      "brand": "#FF453A",
+      "brandPrimary": "#FF453A",
+      "onBrandPrimary": "#FFFFFF",
+      "brandSecondary": "#3A3A3C",
+      "onBrandSecondary": "#FFFFFF",
+      "brandTertiary": "#FF453A20",
+      "onBrandTertiary": "#FF453A",
+      "success": "#32D74B",
+      "onSuccess": "#000000",
+      "warning": "#FF9F0A",
+      "onWarning": "#000000",
+      "error": "#FF453A",
+      "onError": "#000000",
+      "info": "#8E8E93",
+      "onInfo": "#000000",
+      "border": "#38383A",
+      "borderStrong": "#48484A",
+      "divider": "#38383A80",
+      "muted": "#8E8E93",
+      "onBrand": "#FFFFFF",
+      "priorityLow": "#32D74B",
+      "priorityNormal": "#8E8E93",
+      "priorityHigh": "#FF9F0A",
+      "priorityUrgent": "#FF453A"
+    },
+    "surface": "#000000",
+    "onSurface": "#FFFFFF",
+    "surfaceSecondary": "#1C1C1E",
+    "onSurfaceSecondary": "#F2F2F7",
+    "surfaceTertiary": "#2C2C2E",
+    "onSurfaceTertiary": "#E5E5EA",
+    "surfaceInverse": "#F2F2F7",
+    "onSurfaceInverse": "#000000",
+    "brand": "#FF453A",
+    "brandPrimary": "#FF453A",
+    "onBrandPrimary": "#FFFFFF",
+    "brandSecondary": "#3A3A3C",
+    "onBrandSecondary": "#FFFFFF",
+    "brandTertiary": "#FF453A20",
+    "onBrandTertiary": "#FF453A",
+    "success": "#32D74B",
+    "onSuccess": "#000000",
+    "warning": "#FF9F0A",
+    "onWarning": "#000000",
+    "error": "#FF453A",
+    "onError": "#000000",
+    "info": "#8E8E93",
+    "onInfo": "#000000",
+    "border": "#38383A",
+    "borderStrong": "#48484A",
+    "divider": "#38383A80",
+    "muted": "#8E8E93",
+    "onBrand": "#FFFFFF"
+  },
+  "typography": {
+    "displayFontFamily": "Geist",
+    "textFontFamily": "Geist",
+    "scale": {
+      "sm": 12,
+      "base": 14,
+      "lg": 16,
+      "xl": 20,
+      "2xl": 24,
+      "3xl": 32
+    }
+  },
+  "spacing": {
+    "rule": "Generous vertical rhythm, inset grouped lists (like iOS Settings/Reminders). Do not cramp elements. Touch targets must be at least 44x44.",
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 24,
+    "2xl": 32,
+    "3xl": 48
+  },
+  "radius_tokens": {
+    "sm": 6,
+    "md": 12,
+    "lg": 20,
+    "pill": 999
+  },
+  "shadow_tier": "1",
+  "navigation": "bottom_tabs",
+  "icon_set": "Ionicons",
+  "glassmorphism": {
+    "enabled": "true",
+    "do's": [
+      "Use glassmorphism for the bottom tab bar and sticky headers to provide Apple-like premium depth",
+      "Apply glass effect on Modals and action sheets"
+    ],
+    "dont's": [
+      "Never blur task rows or standard buttons",
+      "Do not use glass for empty state backgrounds"
+    ]
+  },
+  "platform_libraries": {
+    "glass": {
+      "ios": "expo-glass-effect",
+      "android": "expo-blur",
+      "low_end_android_fallback": "solid surfaceSecondary"
+    },
+    "image": "expo-image",
+    "blur": "expo-blur",
+    "bottom_sheet": "@gorhom/bottom-sheet",
+    "animation": "react-native-reanimated",
+    "gesture": "react-native-gesture-handler"
+  },
+  "screens": [
+    {
+      "name": "Today (Aujourd'hui)",
+      "purpose": "Primary landing screen showing current date, task summary, and actionable tasks categorized by En retard, Aujourd'hui, Plus tard.",
+      "states": {
+        "loading": "Skeleton rows reflecting the grouped list structure.",
+        "empty": "Clean illustration of an organized desk + 'Organisez vos tâches. N'oubliez plus rien.' with a primary '+ Ajouter une tâche' CTA.",
+        "error": "Discreet error message with a retry button centered."
+      },
+      "layout": "Large date header at the top (Geist 3xl/2xl). A subtle summary text (e.g., '5 tâches aujourd'hui'). Tasks grouped in iOS-style inset lists (surfaceSecondary cards with md radius, border-bottom dividers between rows). Each row has a checkbox (left), Title + Time, Priority dot (right). Floating Action Button (FAB) or sticky bottom CTA for '+ Ajouter une tâche' layered with a glass background."
+    },
+    {
+      "name": "Calendar (Calendrier)",
+      "purpose": "Overview of tasks across a month/week/day view.",
+      "states": {
+        "loading": "Calendar grid skeleton.",
+        "empty": "No tasks for the selected date - subtle empty message.",
+        "error": "Error fetching calendar data."
+      },
+      "layout": "Header with Month/Year. Horizontal swipeable calendar strip or full grid. Tasks are displayed below the selected date as compact rows. Priority is indicated by colored chips/dots. Tapping a date opens a quick-add modal."
+    },
+    {
+      "name": "All Tasks (Tâches)",
+      "purpose": "List view of all tasks with combinable filters and search.",
+      "states": {
+        "loading": "Skeleton rows.",
+        "empty": "Search/Filter yielded no results - 'Aucune tâche trouvée'.",
+        "error": "Error loading tasks."
+      },
+      "layout": "Sticky search bar with a glass background. Horizontal scrollable filter chips (Priority, Date) below search. Inset grouped lists of tasks. Swipe left on a row to reveal 'Reporter' and 'Supprimer' actions."
+    },
+    {
+      "name": "Task Detail (Détail de tâche)",
+      "purpose": "Deep dive into a specific task for editing, recurrence, and full actions.",
+      "states": {
+        "loading": "Spinner centered.",
+        "empty": "N/A",
+        "error": "Task not found."
+      },
+      "layout": "Bottom sheet or pushed screen. Clean form layout. Large title input. Segmented controls or chip rows for 'Date', 'Heure', 'Priorité'. Toggle for 'Répétition'. 'Terminer', 'Dupliquer', 'Supprimer' provided as action buttons at the bottom."
+    },
+    {
+      "name": "Settings (Réglages)",
+      "purpose": "App configuration (Theme, Notifications, Defaults).",
+      "states": {
+        "loading": "N/A",
+        "empty": "N/A",
+        "error": "N/A"
+      },
+      "layout": "Standard iOS Settings layout. surfaceSecondary inset groups with labels on the left and toggles/chevrons on the right. Dark/Light/Auto theme segmented control."
+    }
+  ],
+  "images": {
+    "empty_state_today": {
+      "url": "https://images.unsplash.com/photo-1510519138101-570d1dca3d66?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwZGFyayUyMGRlc2slMjBzZXR1cHxlbnwwfHx8fDE3OTA2Njk4ODB8MA&ixlib=rb-4.1.0&q=85",
+      "dark": "https://images.unsplash.com/photo-1510519138101-570d1dca3d66?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwZGFyayUyMGRlc2slMjBzZXR1cHxlbnwwfHx8fDE3OTA2Njk4ODB8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Minimalist dark desk setup representing organization"
+    },
+    "empty_state_light": {
+      "url": "https://images.unsplash.com/photo-1756725519441-053290bd9058?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwbGlnaHQlMjB3b3Jrc3BhY2V8ZW58MHx8fHwxNzkwNjY5ODgwfDA&ixlib=rb-4.1.0&q=85",
+      "dark": "https://images.unsplash.com/photo-1756725519441-053290bd9058?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwbGlnaHQlMjB3b3Jrc3BhY2V8ZW58MHx8fHwxNzkwNjY5ODgwfDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Minimalist light workspace with rimless eyeglasses on a notebook"
+    }
+  },
+  "haptics": {
+    "task_complete": "success",
+    "add_task": "medium",
+    "delete_task": "heavy",
+    "change_priority": "selection",
+    "tab_switch": "selection",
+    "filter_toggle": "light"
+  },
+  "instructions_to_main_agent": [
+    "PREMIUM RULE: The app must default to Dark Mode but respect the 'Auto' system setting. The 'color' object contains both 'light' and 'dark' properties. Wire up a theme provider to use these correctly. Do NOT use pure white for the Light theme background (use #F2F2F7) to maintain the iOS grouped-list look.",
+    "BANNED COLOR ENFORCEMENT: Blue is strictly forbidden per design guidelines. The requested 'bleu/gris' for Normal priority MUST be implemented as Gray (#8E8E93).",
+    "UI COMPOSITION: Use inset grouped lists (like Apple Reminders/Settings). Tasks should be rows inside a surfaceSecondary container with border-bottom dividers, NOT floating separate cards. This ensures a clean, uncluttered interface.",
+    "PRIORITY INDICATORS: Priority colors (Green, Gray, Orange, Red) should NOT color the entire task row. Use a small, discreet colored dot or a slightly tinted checkbox border on the right/left of the row.",
+    "TYPOGRAPHY: Load the 'Geist' font using expo-font natively (via a local asset or standard expo-font loaders, not @expo-google-fonts as requested). Use bold weights (500 max) for large date headers.",
+    "OVERDUE HANDLING: Overdue ('En retard') tasks should sit at the top of the Today view in a subtle, non-aggressive way (e.g., standard text with a subtle red date, not a massive red banner) with a quick 'Reporter à demain' swipe action.",
+    "ANIMATIONS: Keep micro-animations highly subtle. Use react-native-reanimated for layout transitions (like a task disappearing when checked) to mimic Apple Reminders' fluid row collapsing. Implement the haptic feedback mapping defined in the JSON for a tactile feel."
+  ]
+}
